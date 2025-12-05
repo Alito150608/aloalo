@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro de Visitas - Testeo en Animales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('imagen/terror.jpg');
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: white;
+            text-align: center;
+        }
+
+        .form-container {
+            background-color: rgba(128, 0, 0, 0.7);
+            width: 50%;
+            margin: 100px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        h3 {
+            font-size: 26px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        input[type="text"], textarea {
+            width: 80%;
+            padding: 10px;
+            margin-top: 8px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.85);
+            color: #800000;
+        }
+
+        textarea {
+            height: 90px;
+            resize: none;
+        }
+
+        input[type="submit"] {
+            width: 60%;
+            padding: 12px;
+            margin-top: 15px;
+            font-size: 18px;
+            background-color: #800000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #b30000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h3>📖 Libro de Visitas</h3>
+
+        <form method="post" action="guardar.php">
+            <p>
+                <label>Nombre:</label><br>
+                <input name="camponombre" type="text" required />
+            </p>
+
+            <p>
+                <label>Comentario:</label><br>
+                <textarea name="campocomentario" required></textarea>
+            </p>
+
+            <p>
+                <input id="btEnviar" type="submit" value="Enviar Comentario" />
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>
